@@ -228,7 +228,7 @@ header ul li a.current {
   margin-top: 20%;
   margin-left: 15%;
   box-shadow: #fed136;
-  box-shadow: 0 4px 8px 0 #fed136, 0 6px 20px 0 #fed136;
+  box-shadow: 0 2px 4px 0 #fed136, 0 0 10px 0 #fed136;
 }
 
 iframe {
