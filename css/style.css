@@ -1,0 +1,378 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* RESET FILE AT THE BEGINING OF THE CSS STYLESHEET TO MAKE SURE ALL BROWSERS ARE SUPPORTED */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* here we will add the background image */
+body {
+  line-height: 1;
+  background: url(../images/coding-bg.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Droid Serif", "Anonymous Pro";
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ----------------------- RESET FILE ENDS HERE, BELOW WE ARE ADDING OUR OWN STYLING ---------------------- */
+
+header {
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  background-color: transparent;
+  animation-delay: 1s;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header ul {
+  line-height: 60px;
+  display: flex;
+}
+
+header ul li {
+  flex: 1;
+  text-align: center;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+header ul li a.current {
+  color: #fed136;
+}
+
+.intro-heading {
+  text-align: center;
+  margin-top: 28%;
+}
+
+.intro-heading h4 {
+  /* padding-top: 30px; */
+  font-size: 18px;
+  font-family: "Anonymous Pro", "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  color: #fed136;
+}
+
+.intro-heading h1 {
+  font-size: 80px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  animation-delay: 2s;
+}
+
+.about {
+  width: 45%;
+  margin-top: 13%;
+  word-wrap: break-word;
+  float: right;
+}
+
+.about-container {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.about h3 {
+  color: #fed136;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+  animation-delay: 2s;
+}
+
+.about p {
+  font-family: sans-serif;
+  color: white;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 200;
+  animation-delay: 1s;
+}
+
+.services-container {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 30%;
+}
+
+.services {
+  width: 100%;
+  margin: auto;
+}
+
+.services h3 {
+  font-size: 24px;
+  color: black;
+  font-weight: 300;
+  padding: 0 50px;
+  height: 70px;
+  line-height: 70px;
+  border: 1px solid black;
+  border-radius: 5px;
+  /* margin-bottom: 25px; */
+  margin: auto;
+  display: inline-block;
+  background-color: #fed136;
+  text-align: center;
+  float: none;
+}
+
+.portfolio {
+  width: 100%;
+  margin-top: 13%;
+}
+
+.figure {
+  /* display: inline-block; */
+  width: 29%;
+  float: left;
+  position: relative;
+  margin-bottom: 55px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.7);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.figure img {
+  width: 90%;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.figure:nth-child(3n + 2) {
+  margin: 0 6%;
+}
+
+.figure h3 {
+  /* position: absolute; */
+  /* bottom: 0; */
+  width: 100%;
+  height: 30%;
+  /* line-height: 50px; */
+  /* background-color: rgba(255, 255, 255, 0.8);
+   */
+  background-color: #f4f4f4f4;
+  color: #000;
+  padding: 10px 10px;
+  font-weight: 500;
+  font-size: large;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+
+.contact {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 13%;
+  border: 1px solid white;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.contact form {
+  padding: 0 20px 20px 20px;
+}
+
+.contact h2 {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #fed136;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+input,
+textarea {
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+}
+
+.textField,
+.messageField {
+  width: 100%;
+  height: 45px;
+  border: 1px solid rgb(101, 101, 103);
+  background-color: transparent;
+  color: white;
+  padding: 0 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.messageField {
+  max-width: 100%;
+  min-height: 130px;
+  padding: 10px;
+}
+
+.textField:focus,
+.messageField:focus {
+  border-color: #ffffff;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(164, 135, 117);
+  opacity: 1; /* Firefox */
+}
+
+.submitButton {
+  width: 100%;
+  height: 45px;
+  background-color: #fed136;
+  color: #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: 1px solid black;
+}
