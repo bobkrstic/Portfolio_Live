@@ -205,6 +205,14 @@ header ul li a.current {
   color: #fed136;
 }
 
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 2px solid rgba(140, 120, 110, 0.9);
+  width: 150px;
+}
+
 .intro-heading h1 {
   font-size: 80px;
   font-weight: 900;
@@ -407,6 +415,39 @@ textarea {
   font-size: 16px;
   border: 1px solid black;
 }
+
+.submitButton:hover {
+  background-color: rgb(50, 41, 38);
+  color: rgb(164, 135, 117);
+}
+
+.my-icons p {
+  /* float: left; */
+  /* color: #fed136; */
+  color: rgb(50, 41, 38);
+  margin: 10px;
+  font-size: 30px;
+  float: right;
+  /* margin: auto; */
+}
+
+.my-icons p:hover {
+  color: #fed136;
+}
+
+.my-icons {
+  margin: auto;
+  margin-top: 70px;
+  width: 70%;
+  /* float: right; */
+}
+
+.my-icons p i {
+  /* text-align: center; */
+  /* margin-left: 45%; */
+}
+
+/* ---------------------- starting with media queries ----------------------------- */
 
 @media only screen and (max-width: 650px) {
   header ul li a {
